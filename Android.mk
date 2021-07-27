@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),j6lte)
+ifeq ($(TARGET_DEVICE),a6lte)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

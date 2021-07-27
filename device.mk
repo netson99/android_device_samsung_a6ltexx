@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/j6lte
+DEVICE_PATH := device/samsung/a6lte
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -80,4 +80,4 @@ PRODUCT_COPY_FILES += \
 # Inherit from common
 $(call inherit-product, device/samsung/universal7870-common/device-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/j6lte/j6lte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a6lte/a6lte-vendor.mk)

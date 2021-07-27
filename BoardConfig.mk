@@ -13,24 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/j6lte
+DEVICE_PATH := device/samsung/a6lte
 
 # Audio
 BOARD_USE_TFA_AMP := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := j6lte,j6ltexc,j6ltexx,j6ltelk
+TARGET_OTA_ASSERT_DEVICE := a6lte,a6ltexc,a6ltexx,a6ltelk
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos7870-j6lte_defconfig
+TARGET_KERNEL_CONFIG := exynos7870-a6lte_defconfig
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_j6lte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j6lte
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a6lte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a6lte
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
@@ -60,4 +60,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 -include device/samsung/universal7870-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/j6lte/BoardConfigVendor.mk
+-include vendor/samsung/a6lte/BoardConfigVendor.mk

@@ -96,7 +96,14 @@ void vendor_load_properties()
 
 	    /* SM-A320Y */
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-A320Y");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "a3y17ltedx");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "a3y17ltexc");
+
+    } else if (bootloader.find("A600G") != std::string::npos) {
+
+	    /* SM-J600F */
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-A600G");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "a6ltexx");
+
     }
 
 }
